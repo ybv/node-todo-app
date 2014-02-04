@@ -44,12 +44,12 @@ module.exports = function (app) {
 			if(err)
 				res.send(err)
 
-			Todo.find(functon(err,todos){
-				if(err)
-					res.send(err)
-				res.json(todos);
+			Todo.find(function(err,todos){
+					if(err)
+						res.send(err)
+					res.json(todos);
 
-			});
+				});
 
 		});
 	});
